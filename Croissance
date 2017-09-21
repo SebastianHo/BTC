@@ -2,3 +2,14 @@
 狗股策略
 国内市场都关了
 凉了
+如何设置股票池？
+可以使用get_index_stocks、get_industry_stocks或是自行设置股票池列表。
+例如：
+
+# 获取所有沪深300的股票, 设为股票池  
+stocks = get_index_stocks('000300.XSHG')  
+set_universe(stocks)
+或者指定自定义的股票池:
+
+stocks = ['000009.XSHE','002222.XSHE','000005.XSHE','000002.XSHE']
+set_universe(stocks)
